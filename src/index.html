@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>OlamDev</title>
+		<!-- <meta name="description" content="A fullscreen scroll-based slideshow with a content view powered by GreenSock's Observer plugin." />
+		<meta name="keywords" content="observer plugin, gsap, scrolling, slideshow" /> -->
+		<meta name="author" content="OlamDev" />
+		<link rel="shortcut icon" href="./img/logo .1.webp">
+		<link rel="stylesheet" href="https://use.typekit.net/zns7sax.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!-- <script src="//tympanus.net/codrops/adpacks/analytics.js"></script> -->
+	</head>
+	<body class="loading">
+		<main>
+			<div class="frame">
+				<!-- menu -->
+				<div class="frame___menu">
+				</div>
+				<!--nav section -->
+				<nav class="frame__nav">
+					<button class="frame__nav-button unbutton">Home</button>
+					<button class="frame__nav-button unbutton">About</button>
+					<button class="frame__nav-button unbutton">Projects</button>
+					<button class="frame__nav-button unbutton">Contact</button>
+					<!-- <button class="frame__nav-button unbutton">SSome &amp; more</button> -->
+				</nav>
+				<!--button to inform -->
+				<button class="frame__back unbutton">
+					<span data-splitting>&larr; Go back</span>
+				</button>
+				<!-- <span class="frame__info">&darr; Scroll or drag &darr;</span> -->
+			</div>
+			<div class="slides">
+				<div class="slide">
+					<div class="slide__inner">
+						<div class="slide__img">
+							<div class="slide__img-inner" style="background-image:url(img/1.webp)">
+								<div class="slide__img-inner-title-container">
+									<h1 class="slide__img-inner-title">Home</h1>
+									<div class="background-blur background-blur-1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide__content">
+							<div class="slide__content-img" style="background-image:url(img/1.webp)"></div>
+							<div class="slide__content-text">
+								<h2>Frontend <br> Developer</h2>
+								<p>PASSIONATE ABOUT CREATING UNFORGETTABLE AND BEAUTIFUL DIGITAL EXPERIENCES.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__inner">
+						<div class="slide__img">
+							<div class="slide__img-inner" style="background-image:url(img/2.webp)">
+								<div class="slide__img-inner-title-container">
+									<h1 class="slide__img-inner-title">About</h1>
+									<div class="background-blur  background-blur-2"></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide__content">
+							<div class="slide__content-skills">
+								<h2>Skills</h2>
+								<ul>
+									<li>javascript</li>
+									<li>node.js</li>
+									<li>react.js</li>
+									<li>bootstrap</li>
+									<li>tailwind</li>
+									<li>css</li>
+									<li>html</li>
+
+								</ul>
+							</div>
+							<div class="slide__content-text">
+								<h2>Who I am ?</h2>
+							<p>I'm a fiel technology enthusiast, in the field of technology since 2021, I turn your ideas into real creations.<br>
+								I'm currently based in Trujillo, Peru.
+							</p>
+							<div class="slide__content-social">
+								<a href="http://www.linkedin.com/in/olam-dev" target="_blank">LN</a>
+								<a href="https://github.com/olamcastillo" target="_blank">GH</a>
+								<a href="https://www.instagram.com/olamcastillo/" target="_blank">IG</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- projects -->
+				<div class="slide">
+					<div class="slide__inner">
+						<div class="slide__img">
+							<div class="slide__img-inner" style="background-image:url(img/3.webp)">
+								<div class="slide__img-inner-title-container">
+									<h1 class="slide__img-inner-title">Projects</h1>
+									<div class="background-blur  background-blur-3"></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide__content">
+							<div class="slide__content-img" id="slide__content-img" style="background-image:url(img/3.webp)"></div>
+							<div class="slide__content-text">
+								<h2>Some works</h2>
+								<a id="slide__content-link" class="slide__content-link-1" href="https://interactive-synfcusion-dashboard.netlify.app/" target="_blank" rel="noopener noreferrer">Interactive Dashboard</a>
+								<a id="slide__content-link" class="slide__content-link-2" href="https://olamcastillo.github.io/encriptador/" target="_blank" rel="noopener noreferrer">Transcripter Generator</a>
+								<a id="slide__content-link" class="slide__content-link-3" href="#" target="_blank" rel="noopener noreferrer">Portfolio Page</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__inner">
+						<div class="slide__img">
+							<div class="slide__img-inner" style="background-image:url(img/4.webp)">
+								<div class="slide__img-inner-title-container">
+									<h1 class="slide__img-inner-title">Contact</h1>
+									<div class="background-blur  background-blur-4"></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide__content">
+							<div class="slide__content-form">
+								<h2>Let's Talk</h2>
+								<div class="form container">
+									<form class="form-minimal" id="form">
+										<div class="minimal-input">
+											<input autocomplete="off" required class="minimal-textfield" name="name" id="name" type="text">
+											<div class="textfield-underline"></div>
+											<label for="name">Name</label>
+										</div>
+										<div class="minimal-input">
+											<input autocomplete="off" name="email" required class="minimal-textfield" id="email" type="email">
+											<div class="textfield-underline"></div>
+											<label for="email">Email</label>
+										</div>
+										<div class="minimal-input">
+											<!-- <input required class="minimal-textfield" id="Message" type="text" autocomplete="off"> -->
+											<textarea autocomplete="off" name="message" required class='minimal-textfield' id="message"></textarea>
+											<div class="textfield-underline"></div>
+											<label for="message">Message</label>
+										</div>
+										<div class="button">
+											<button class="btn-minimal" id="button" type="submit">Send</button>
+										</div>
+									</form>
+									<script type="text/javascript"
+									src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+									<script type="text/javascript">
+										emailjs.init('ozw0rLFUflkq-9YHY')
+									</script>
+								</div>
+							</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="cursor">
+				<span class="cursor__text" data-splitting>+ Discover more</span>
+			</div>
+			<div class="menu">
+				<button class="menu-button">&#9776;</button>
+				<div class="menu-links unshow-item">
+				<button class="menu-link-modal">&#215;</button>
+					<h2 class="menu-link">Home</h2>
+					<h2 class="menu-link">About</h2>
+					<h2 class="menu-link">Projects</h2>
+					<h2 class="menu-link">Contact</h2>
+				</div>
+				<div class="menu-links-bg unshow-item"></div>
+			</div>
+		</main>
+		<script type="module" src="js/index.js"></script>
+
+		<script>
+			const btn = document.getElementById('button');
+		document.getElementById('form')
+		.addEventListener('submit', function(event) {
+			event.preventDefault();
+			btn.value = 'Sending...';
+			const serviceID = 'olam';
+			const templateID = 'template_email';
+			emailjs.sendForm(serviceID, templateID, this)
+			.then(() => {
+				btn.value = 'Send';
+				alert('Sent!!!');
+			}, (err) => {
+				btn.value = 'Send Email';
+				alert(JSON.stringify(err));
+			});
+		});
+		</script>
+		
+	</body>
+</html>
